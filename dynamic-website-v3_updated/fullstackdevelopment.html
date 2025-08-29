@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Full Stack Development - WebTopics</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container-fluid">
+<a class="navbar-brand fw-bold" href="index.html">WebTopics</a>
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+<li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+<li class="nav-item"><a class="nav-link" href="js.html">JavaScript</a></li>
+<li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+<li class="nav-item"><a class="nav-link" href="fullstackdevelopment.html">Full Stack</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="container my-5">
+<h2>Full Stack Development</h2>
+<p>Full stack development involves both frontend and backend technologies.</p>
+<ul>
+<li><strong>Frontend:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+<li><strong>Backend:</strong> PHP (server-side scripting)</li>
+<li><strong>Database:</strong> MySQL (data storage)</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code>// PHP Example
+&lt;?php
+  echo "Hello from PHP!";
+?&gt;
+
+// MySQL Query
+SELECT * FROM users WHERE id = 1;
+</code></pre>
+</section>
+<div class="text-center my-4">
+<a class="btn btn-primary" href="index.html">⬅ Back to Home</a>
+</div>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<h2>Deep Dive into Full Stack Development</h2>
+<p>Full stack development involves working on both the frontend (client-side) and backend (server-side) of web applications. A full stack developer understands how to build user interfaces, handle server logic, and manage databases.</p>
+<h3>Key Skills</h3>
+<ul>
+<li><strong>Frontend:</strong> HTML, CSS, JavaScript, frameworks like React or Angular.</li>
+<li><strong>Backend:</strong> Node.js, Python (Django/Flask), Java (Spring), or PHP (Laravel).</li>
+<li><strong>Databases:</strong> SQL (MySQL, PostgreSQL) and NoSQL (MongoDB).</li>
+<li><strong>Version Control:</strong> Git and GitHub.</li>
+</ul>
+<h3>End-to-End Example</h3>
+<p>Below is a simplified flow of a full stack project:</p>
+<pre><code>
+    // Frontend (index.html)
+    &lt;button onclick="sendMessage()"&gt;Send to Server&lt;/button&gt;
+    &lt;script&gt;
+        async function sendMessage() {
+            let response = await fetch('/api/message', { method: 'POST', body: 'Hello Server' });
+            let result = await response.text();
+            alert("Server says: " + result);
+        }
+    &lt;/script&gt;
+
+    // Backend (Node.js with Express)
+    const express = require('express');
+    const app = express();
+    app.post('/api/message', (req, res) =&gt; {
+        res.send('Hello Client');
+    });
+    app.listen(3000, () =&gt; console.log('Server running on port 3000'));
+    </code></pre>
+<p>This demonstrates how the frontend interacts with the backend to exchange data, a core concept in full stack applications.</p>
+</body>
+</html>
